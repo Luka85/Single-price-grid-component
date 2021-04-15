@@ -1,0 +1,265 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+body{
+background-color: rgb(229, 239, 245);
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+padding: 1.25rem;
+}
+
+.main-price-grid{
+display:flex;
+flex-direction: column;
+justify-content: center;
+max-width: 20rem;
+box-shadow: 0 5px 20px 1px rgb(212, 222, 228);
+}
+
+.main-price-grid .top-join{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0.5rem 0.5rem 0 0;
+	padding: 1.9rem 1.9rem;
+}
+.main-price-grid .bottom{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+}
+.bottom .left-middle-monthly{
+    background-color: hsl(179, 62%, 43%);
+    padding: 1.9rem 1.9rem;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.main-price-grid .right-bottom-why{
+    background-color: hsl(179, 47%, 52%); 
+    border-radius: 0 0 0.4rem 0.4rem;
+	padding: 1.9rem 1.9rem;
+}
+
+.top-join h1{
+	font-size: 1.3rem;
+	padding-bottom: 1.6rem;
+	font-weight: 700;
+	color: hsl(179, 62%, 43%);
+}
+
+.top-join .top-join-h2{
+	color:hsl(71, 73%, 54%);
+	font-weight: 700;
+	padding-bottom: 0.9rem;
+	line-height: 1.2;
+}
+
+.top-join .top-join-p{
+	color:hsl(218, 22%, 67%);
+	font-weight: 400;
+	font-size: 0.85rem;
+	line-height: 1.8;
+}
+
+.left-middle-monthly .left-middle-monthly-h2{
+	font-size: 1rem;
+	padding-bottom: 1.6rem;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.9)
+}
+
+.left-middle-monthly span{
+	display:inline-block;
+    padding-bottom: 0.6rem;
+}
+
+.left-middle-monthly span:nth-of-type(1){
+	font-size: 26px;
+	padding-right: 0.6rem;
+	font-weight: 700;
+	color: white;
+}
+
+.left-middle-monthly span:nth-of-type(2){
+    font-size:0.85rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+	transform: translateY(-4px);
+}
+
+.left-middle-monthly .left-middle-p {
+    font-size: 0.85rem;
+	padding-bottom: 1.6rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.left-middle-monthly .signup {
+	/* display:inline-block; */
+	padding: 0.9rem 0;
+    margin: 0 auto;
+	font-weight: 700;
+	font-size: 0.9rem;
+	letter-spacing: 1.05px;
+	text-align: center;
+	border-radius: 0.4rem;
+	color: rgba(255, 255, 255, 0.8);
+	background-color: hsl(71, 73%, 54%);
+	border: 2px solid  hsl(71, 73%, 54%);
+	box-shadow: 0 3px 15px -5px rgb(24, 101, 102);
+	text-decoration: none;
+	width: 100%;
+	
+}
+
+.right-bottom-why .right-bottom-why-h2{
+	font-size: 1rem;
+	padding-bottom: 1.3rem;
+	font-weight: 700;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.right-bottom-why ul li{
+	font-size: 0.8rem;
+	padding-bottom: 0.4rem;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.bottom .signup:hover{
+	color: rgba(255, 255, 255, 0.8);
+	background-color: hsl(71, 73%, 54%);
+	border: 2px solid   rgba(255, 255, 255, 1);
+}
+.bottom .signup:active{
+	transform:scale(1.05);
+	color: rgba(255, 255, 255, 0.8);
+	background-color: hsl(71, 73%, 54%);
+	border: 2px solid   rgba(255, 255, 255, 1);
+}
+.bottom .signup:focus-visible{
+	outline:2px solid   rgba(255, 255, 255, 1);
+}
+
+@media (min-width:36rem){
+.main-price-grid{
+    /* margin:0 50px; */
+    min-width: 36rem;
+    max-width: 42rem ;
+}
+.main-price-grid .top-join{
+    padding: 2.5rem 2.5rem;
+}
+
+.main-price-grid .bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.bottom .left-middle-monthly{
+    max-width:20rem;
+    padding: 2.5rem 2.5rem;
+    flex-basis: 50%;
+    flex-grow: 1;
+	border-radius: 0 0 0 0.4rem;
+}
+
+.main-price-grid .right-bottom-why{
+    max-width:20rem;
+    padding: 2.5rem 2.5rem;
+    flex-basis: 50%;
+    flex-grow: 1;
+	border-radius: 0 0 0.4rem 0;
+}
+.top-join h1{
+	font-size: 1.4rem;
+	padding-bottom: 1.9rem;
+}
+.top-join .top-join-h2{
+    font-size: 1.125rem;
+	padding-bottom: 0.625rem;
+}
+.top-join .top-join-p{
+	font-size: 1rem;
+}
+.left-middle-monthly .left-middle-monthly-h2{
+	font-size: 1.125rem;
+	padding-bottom: 1.25rem;
+}
+.left-middle-monthly span:nth-of-type(1){
+	font-size: 1.9rem;
+	padding-bottom: 0.93rem;
+	padding-right: 0.625rem;
+}
+
+.left-middle-monthly span:nth-of-type(2){
+    font-size:1rem;
+}
+.left-middle-monthly .left-middle-p {
+    font-size: 1rem;
+	padding-bottom: 1.9rem;
+}
+.left-middle-monthly .signup {
+	font-size: 1rem;
+}
+.right-bottom-why .right-bottom-why-h2{
+	font-size: 1.125rem;
+}
+.right-bottom-why ul li{
+	font-size: 0.875rem;
+}
+}
