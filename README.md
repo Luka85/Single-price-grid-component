@@ -24,8 +24,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Live Site URL: [https://luka85.github.io/Single-price-grid-component/]
 ## My process
 
 ### Built with
